@@ -1,0 +1,403 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.offer_bar{
+    background-color: black;
+    color: #E2E1E1;
+    padding: 5px;
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+#offer-close{
+    margin-left: 10%;
+    cursor: pointer;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    position:sticky;
+    top:0;
+    background-color: white;
+    z-index: 1;
+}
+
+.navbar-menu-toggle{
+    display: none;
+}
+
+.navbar-links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+}
+
+.navbar-link a{
+    text-decoration: none;
+    color:black;
+}
+.navbar-link a:hover{
+    text-decoration: underline;
+}
+
+.sidebar{
+    background-color: #1D232C;
+    color: #E2E1E1;
+    width: 50%;
+    height: 100%;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index: 10;
+    padding: 30px;
+}
+
+.sidebar_close{
+    text-align: right;
+    cursor: pointer;
+}
+
+
+.side-navbar-links p{
+    margin-bottom:30px;
+}
+
+.side-navbar-links a{
+    color: #E2E1E1;
+    text-decoration: none;
+}
+
+.side-navbar-links a:focus{
+    cursor: pointer;
+}
+
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.subheading{
+    margin-top: 5vw;
+}
+
+.brands{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2vw;
+}
+.brands-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2vw;
+    text-align: center;
+}
+
+.brands-icon{
+    width: 4vw;
+    align-items: center;
+}
+
+.service-container1{
+    margin-top: 5vw;
+    margin-bottom: 2vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5vw;
+}
+
+.service-container2{
+    display: flex;
+    justify-content: space-between;
+    gap:10px;
+    align-items: center;
+    font-size: 1vw;
+}
+
+.service-icon{
+    font-size: 3vw;
+}
+
+.service-container2 div{
+    background-color: #F2F4F7;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.new-arrivals{
+    margin-top: 2vw;
+    display:flex;
+    justify-content: space-between;
+}
+
+.new-arrival-item{
+    position: relative;
+}
+
+.new-arrival-item img{
+    width: 20vw;
+    border-radius: 2%;
+}
+
+.new-arrival-item .overlay{
+    position:absolute;
+    background-color: black;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+}
+
+.new-arrival-item button{
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top:5%;
+    padding-bottom: 5%;
+    position:absolute;
+    left:18%;
+    top:50%;
+    margin-top:10px;
+    font-size: 1.2vw;
+}
+
+.most_wanted{
+    margin-top: 2vw;
+    display:flex;
+    justify-content: space-between;
+}
+
+.most_wanted_items{
+    position: relative;
+}
+
+.most_wanted_items img{
+    width: 20vw;
+    border-radius: 2%;
+}
+
+.most_wanted_items .overlay{
+    position:absolute;
+    background-color: red;
+    color:white;
+    top:3px;
+    left:3px;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 2vw;
+}
+
+.like-image{
+    position: absolute;
+    right:6%;
+    bottom:10%;
+}
+
+.limited-offer{
+    /* margin-top: 1.5vw; */
+    display: flex;
+    justify-content: center;
+    background-color: #1D232C;
+    color: #E2E1E1;
+    padding: 20px;
+    font-size: 2vw;
+    align-items: center;
+}
+
+.limited-offer-image img{
+    width: 100%;
+    height: 100%;
+}
+
+.limited-offer-text{
+    padding: 5%;
+}
+
+.limited-offer-text button{
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    position:absolute;
+    padding-left: 5%;
+    padding-right:5%;
+    padding-top:1%;
+    padding-bottom: 1%;
+    margin-top:1vw;
+    font-size: 1.5vw;
+}
+
+.new_letter{
+    margin-top: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2vw;
+}
+
+.new_letter input{
+    width: 80vw;
+    padding:10px;
+    border:3px solid black;
+    margin-bottom: 10px;
+}
+
+.new_letter button{
+    font-size: 1.8vw;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding:10px;
+    margin-top:10px;
+}
+
+.footer{
+    background-color: black;
+    color: white;
+    margin-top:5vw;
+    padding:40px;
+    font-size: 2vw;
+}
+
+.footerbox1{
+    display: flex;
+    flex-direction: column;
+}
+
+.footericon{
+    display: flex;
+    flex-direction: row;
+    gap:60px;
+    margin-top:10px;
+}
+
+.copyright{
+    margin-top:20px;
+}
+
+.divide_section{
+    display: flex;
+}
+
+.filter_section{
+    flex-basis: 25%;
+    position: relative;
+    font-size: 2vw;
+}
+
+.filter_section_occasion,.filter_section_colors,.filter_section_arrivals{
+    margin-top:3vw;
+    margin-bottom: 10px;
+}
+
+.vertical_line{
+    border: none;
+    border-left: 3px solid black;
+    height: 100%;
+    position: absolute;
+    margin:0 20px;
+    top:0;
+    right:0;
+}
+
+.product_section{
+    flex-basis: 75%;
+    padding:10px;
+}
+
+.navbar_search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding:10px;
+    width: 95%;
+}
+
+.navbar_search input{
+    border: none;
+    background: transparent;
+    width: 100%;  
+}
+
+.navbar_search input:focus{
+    outline: none;
+}
+
+.products{
+    margin-top: 2vw;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 1vw;
+    row-gap: 20px;
+}
+
+.product img{
+    width: 20vw;
+}
+
+.contact_us{
+    background-color: black;
+    color: white;
+    width: 70vw;
+    margin: auto;
+    padding: 5vw;
+    margin-top:10px;
+    border-radius: 10px;
+    padding-right: 10vw;
+}
+
+.contact_us_heading{
+    margin-bottom: 1vw;
+}
+
+.contact_us label{
+    display: block;
+    margin-bottom: 1vw;
+}
+
+.contact_us input,.contact_us textarea{
+    margin-bottom: 1vw;
+    padding: 1vw;
+    width: 100%;
+    font-size: 1vw;
+    border-radius: 5px;
+}
+
+.contact_us button{
+    background-color: #0056B3;
+    color:white;
+    padding:10px;
+    font-size: 1vw;
+    border-radius: 2px;
+    border:none;
+}
+
+
+
+@media screen and (max-width:900px) {
+
+    .navbar-menu-toggle {
+        display: block;
+    }
+
+    .navbar-links {
+        display: none;
+    }
+}
